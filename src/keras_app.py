@@ -7,7 +7,7 @@ from keras.preprocessing import sequence
 from keras.preprocessing.text import Tokenizer
 import gensim
 
-with open("/content/gdrive/My Drive/covid.txt", "r") as f:
+with open("/workspaces/word-embeddings/data/corona.txt", "r") as f:
     data = f
 # data = open("/content/gdrive/My Drive/covid.txt", "r")
 corona_data = [text for text in data if text.count(" ") >= 2]
